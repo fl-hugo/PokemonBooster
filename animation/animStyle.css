@@ -1,0 +1,73 @@
+body{
+    background-image: url("./images/Pokemon.png");
+}
+
+.title-top{
+    font-size: 5em;
+    display: flex;
+    justify-content: center;
+    color: black;
+    padding-top: 100px;
+    font-family: "Love Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 15px;
+}
+
+#gameOpening{
+    display: flex;
+    justify-content: center;
+    display: grid;
+    height: 330px;
+    grid-template-columns: repeat(2,9vw);
+}
+
+.card-1,.card-2{
+    font-size: 2em;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(177, 167, 53);  
+    border-radius: 10px;
+}
+
+.card-1{
+    background-image: url("./images/poke.png");
+    padding-left: 80px;
+    font-family: "Love Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.card-2{  
+    background-image: url("./images/mon.png");  
+    padding-right: 105px;
+    font-family: "Love Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.anim{
+    animation: myAnimation 2s ease infinite alternate;
+}
+
+.anim2{
+    animation: myAnimationItem-1 2s ease infinite alternate;
+}
+
+@keyframes myAnimation {
+    0% {
+        transform: translateX(0); /* Début de l'animation */
+    }
+    100% {
+        transform: translateX(-500px); /* Fin de l'animation */
+    }
+}
+
+@keyframes myAnimationItem-1 {
+    0% {
+        transform: translateX(0); /* Début de l'animation */
+    }
+    100% {
+        transform: translateX(500px); /* Fin de l'animation */
+    }
+}
